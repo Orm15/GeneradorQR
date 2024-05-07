@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Generador de Código QR</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Código QR</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
-    <h1>Generador de Código QR</h1>
-    <input type="text" id="urlInput" placeholder="Ingresa la URL...">
-    <button onclick="generarQR()">Generar</button>
-    <div id="qrCodeContainer">
-        <img id="qrCodeImg" src="" alt="QR Code">
+    <div class="background">
+        <div class="container">
+            <h1>QR GENERATOR</h1>
+            <div class="input-container">
+                <input type="text" id="urlInput" placeholder="Ingresa la URL...">
+                <button onclick="generarQR()">Generar</button>
+            </div>
+            <div id="qrContainer" style="display: none">
+                <div id="qrCont" class="qr-container">
+                    <img id="qrCodeImg" src="" alt="QR Code">
+                    <img id="picCenter" src="arbol.png" alt="Center Image"  style="display: none" >
+                </div>
+                <canvas id="miCanvas" width="300" height="300"></canvas>
+                <button  id="agregaArbol"   onclick="descargarQR2()" style="display: none">Agregar Árbol</button>
+            </div>
+            <button onclick="reiniciar()">Reiniciar Creación</button>
+        </div>
     </div>
-</div>
-<script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
