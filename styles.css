@@ -141,8 +141,7 @@ input:checked + .slider:before {
       padding: 10px;
     }
 
-    .input-container {
-        margin-right: 5%;
-        margin-left: 3%;
+    .input[type = "text"]{
+        width: 200px;
     }
   }
