@@ -143,8 +143,9 @@ input:checked + .slider:before {
     }
 
     .input[type = "text"]{
-        width: 100px;
+        width: 80%;
         margin-right: 20px;
         margin-left: 11px;
+
     }
   }
