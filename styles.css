@@ -29,6 +29,7 @@ body {
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 100%;
 }
  
 input[type="text"] {
@@ -142,6 +143,8 @@ input:checked + .slider:before {
     }
 
     .input[type = "text"]{
-        width: 200px;
+        width: 100px;
+        margin-right: 20px;
+        margin-left: 11px;
     }
   }
