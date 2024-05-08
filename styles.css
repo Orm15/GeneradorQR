@@ -12,6 +12,7 @@ body {
  
 .background {
     background-color: transparent;
+    margin: 3%;
 }
  
 .container {
@@ -132,3 +133,11 @@ input:checked + .slider:before {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+      width: 90%; /* Reducir el ancho del contenedor para pantallas más pequeñas */
+      margin: 3% auto; /* Reducir los márgenes para pantallas más pequeñas */
+      padding: 10px;
+    }
+  }
