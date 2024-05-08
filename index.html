@@ -17,15 +17,24 @@
             <div id="qrContainer" style="display: none">
                 <div id="qrCont" class="qr-container">
                     <img id="qrCodeImg" src="" alt="QR Code">
-                    <img id="picCenter" src="arbol.png" alt="Center Image"  style="display: none" >
+                    <canvas id="miCanvas" width="300" height="300" style="display: none"></canvas>
+                    <img id="picCenter" src="arbol.png" alt="Center Image" style="display: none">
                 </div>
-                <canvas id="miCanvas" width="300" height="300"></canvas>
-                <button  id="agregaArbol"   onclick="descargarQR2()" style="display: none">Agregar Árbol</button>
+                <div id="switcherContainer">
+                    <label class="switch">
+                        <input type="checkbox" id="switcher" onclick="toggleArbol()">
+                        <span class="slider"></span>
+                    </label>
+                </div>
             </div>
-            <button onclick="reiniciar()">Reiniciar Creación</button>
+            <div id="reiniciarContainer" style="display: none">
+                <button onclick="reiniciar()">Reiniciar Creación</button>
+            </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
+ 
+ 
